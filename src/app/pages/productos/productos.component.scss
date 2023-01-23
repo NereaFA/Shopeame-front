@@ -1,0 +1,30 @@
+img{
+    width: 224px;
+    height: 227px;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        // max-width: 300px;
+        }
+    }
+.descript{
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: 252px;
+    bottom: 146px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0275em;
+    color: #19191D;
+}

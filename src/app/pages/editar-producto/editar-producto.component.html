@@ -1,0 +1,33 @@
+<p class="titulo">Editar producto</p>
+<div class="container-crear-producto">
+    <div class="crea-producto">
+    <form [formGroup]="productoForm" (ngSubmit)="onSubmit()">
+        <div>
+        <h4>Nombre del producto</h4>
+        <input formControlName="name" placeholder="Por ej: Tiesto para planta"/>
+        </div>
+        <div>
+        <h4>Precio</h4>
+        <input formControlName="price" placeholder="Por ej: 9.50"/>
+        </div>
+        <div>
+        <h4>Descripción</h4>
+        <input formControlName="description" placeholder="Por ej: Lo mas vendido este mes"/>
+        </div>
+        <div>
+        <h4>Ruta de imagen</h4>
+        <input formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg"/>
+        </div>
+        <!-- <input formControlName="stars"/> -->
+        <button type="submit">Guardar</button>
+    </form>
+    </div>
+    
+    <div class="pinta-producto">
+    <h4 class="preview">Preview del producto editado</h4>
+    <h4>{{editarProducto?.name}}</h4>
+    <P class="descrip">{{editarProducto?.description}}</P>
+    <h3>{{editarProducto?.price}}</h3>
+    <img class="img" src="{{editarProducto?.image}}" alt="{{editarProducto?.name}}">
+    </div>
+    </div>

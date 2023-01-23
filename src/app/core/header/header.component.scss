@@ -1,0 +1,37 @@
+.navegador{
+    width: 100%;
+    height: 72px;
+    top: 101px;
+    left: 1px;
+    background-color: #FFC970;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.letraS{
+   color: #FFFFFF;
+   background-color: #4d74f5;
+   font-family: 'Red Hat Display';
+   border-radius: 5px;
+   border: #4d74f5;
+}
+.shopea{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-inicio{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #FFC970;
+    border: none;
+    border-radius: 1px;
+}
+.icono{
+    width: 50px;
+    height: 50px;
+}
