@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarProductoComponent } from './pages/editar-producto/editar-producto.component';
 import { ProductoComponent } from './pages/producto/producto.component';
 import { NuevoProductoComponent } from './pages/nuevo-producto/nuevo-producto.component';
+import {RatingModule} from 'primeng/rating';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NuevoProductoComponent } from './pages/nuevo-producto/nuevo-producto.co
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RatingModule
     
   ],
   providers: [],

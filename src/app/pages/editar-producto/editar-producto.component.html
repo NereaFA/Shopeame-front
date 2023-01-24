@@ -18,6 +18,11 @@
         <h4>Ruta de imagen</h4>
         <input formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg"/>
         </div>
+        <div>
+            <h4>Puntuación/Stars</h4>
+            <input formControlName="stars" placeholder="0-5"/>  
+        </div>
+        
         <!-- <input formControlName="stars"/> -->
         <button type="submit">Guardar</button>
     </form>
@@ -26,8 +31,9 @@
     <div class="pinta-producto">
     <h4 class="preview">Preview del producto editado</h4>
     <h4>{{editarProducto?.name}}</h4>
-    <P class="descrip">{{editarProducto?.description}}</P>
     <h3>{{editarProducto?.price}}</h3>
+    <P class="descrip">{{editarProducto?.description}}</P>
     <img class="img" src="{{editarProducto?.image}}" alt="{{editarProducto?.name}}">
+    <p-rating [(ngModel)]="editarProducto.stars">{{editarProducto?.stars}}</p-rating>
     </div>
     </div>

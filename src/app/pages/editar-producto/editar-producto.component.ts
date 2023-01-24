@@ -19,14 +19,15 @@ export class EditarProductoComponent {
   ngOnInit(): void {
 
 this.productoForm = this.formBuilder.group({
-  image: [this.editarProducto.image, [Validators.required]],
-  name: [this.editarProducto.name, [Validators.required]],
-  description: [this.editarProducto.description, [Validators.required]],
-  price: [this.editarProducto.price, [Validators.required]],
-  stars: [0, [Validators.required]],
+  name: [this.editarProducto?.name, [Validators.required]],
+  price: [this.editarProducto?.price, [Validators.required]],
+  description: [this.editarProducto?.description, [Validators.required]],
+  image: [this.editarProducto?.image, [Validators.required]],
+  stars: [this.editarProducto?.stars, [Validators.required]],
 });
+
 this.productoForm!.valueChanges.subscribe(changes => {
-  this.editarProducto = changes
+  this.editarProducto = changes;
 })
 }
 

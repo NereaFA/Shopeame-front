@@ -5,7 +5,8 @@
         <h4>{{producto.name}}</h4>
         <p class="descrip">{{producto.description}}</p>
         <h3>{{producto.price}}</h3>
-        <button routerLink="/editarProducto/{{producto?.id}}">Editar</button>
+        <p-rating [(ngModel)]="producto.stars">{{producto?.stars}}</p-rating>
+        <button (click)="updateProduct(producto)">Editar</button>
     </div>
     </div>
     
