@@ -15,12 +15,19 @@
    font-family: 'Red Hat Display';
    border-radius: 5px;
    border: #4d74f5;
+   height: 25px;
+   width: 25px;
+   display: flex;
+   align-content: space-around;
+   justify-content: center;
+
 }
 .shopea{
     width: 90%;
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    
 }
 
 .img-inicio{

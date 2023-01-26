@@ -33,7 +33,7 @@ this.productoForm!.valueChanges.subscribe(changes => {
 
   onSubmit(){
     console.log(this.editarProducto)
-    this.productoService.postProducto(this.editarProducto).subscribe((data) =>{
+    this.productoService.putProducto(this.editarProducto).subscribe((data) =>{
     // console.log(data);
   })
   this.productoForm.reset(); 

@@ -13,6 +13,7 @@ import { EditarProductoComponent } from './pages/editar-producto/editar-producto
 import { ProductoComponent } from './pages/producto/producto.component';
 import { NuevoProductoComponent } from './pages/nuevo-producto/nuevo-producto.component';
 import {RatingModule} from 'primeng/rating';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {RatingModule} from 'primeng/rating';
     HeaderComponent,
     EditarProductoComponent,
     ProductoComponent,
-    NuevoProductoComponent
+    NuevoProductoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

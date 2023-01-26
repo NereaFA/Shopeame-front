@@ -22,6 +22,9 @@ export class ProductosService {
   postProducto(producto: any){
     return this.http.post(this.db_url, producto);
   }
+  putProducto(producto:any){
+    return this.http.put(`${this.db_url}/${this.id}`, producto);
+  }
 
   setProducto(producto: any){
     this.producto = producto;
